@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*导栏框*/
+.header{
+    height: 7vh;
+    background-color: aqua;
+    background: url(./title.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.header>p{
+    font-weight: 600px;
+
+    color: azure;
+}
+/*内容*/
+.content{
+    height: 93vh;
+    display: flex;
+    flex-direction: row;
+}
+.content .left{
+    background: rgba(122, 224, 53, 0.6);
+    width: 13%;
+    border-right: 2px solid rgba(0, 0, 0, 0.6);
+}
+.content .right{
+    background: rgba(50, 183, 163, 0.6);
+    width: 87%;
+}

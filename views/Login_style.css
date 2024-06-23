@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*导栏框*/
+.header{
+    height: 7vh;
+    background-color: aqua;
+    background: url(./title.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.header>p{
+    font-weight: 600px;
+
+    color: azure;
+}
+/*内容*/
+.box_content{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./background.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 60vh;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7px);
+}
+.box>h1{
+    font-weight: 600px;
+    color: azure;
+    margin-bottom: 20px;
+}
+.box .input-box>label{
+    margin-bottom: 7px;
+    color: rgba(19, 196, 245, 0.9)
+}
+.box .input-box{
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s;
+    margin-bottom: 10px;
+}
+.box .input-box>input{
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+    height: 35px;
+    width: 250px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.box .btn-box{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box .btn-box>a{
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(33, 141, 255);
+    transition: 0.2s;
+    text-align: end;
+}
+.box .btn-box>a:hover{
+    color: #f01818;
+}
+.box .btn-box>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+.box .btn-box>div>button{
+    width: 140px;
+    height: 35px;
+    border: 1px solid rgba(242, 157, 30, 0.886);
+    border-radius: 20px;
+    background: rgba(190, 246, 182, 0.9);
+}
+.box .btn-box>div>button:hover{
+    background: rgba(255,255,255,0.9);
+}
+.box .btn-box>div>button:nth-of-type(2){
+    margin-left: 30px;
+}
+/*侧栏*/
+.sidebar {
+    width: 450px; 
+    position: fixed;
+    left: -450px; 
+    top: 0;
+    bottom: 0;
+    background: #d7fdfe;
+    transition: left 0.3s; /* 平滑过渡效果 */
+    overflow-y: auto; /* 允许侧边栏内容滚动 */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2); /* 阴影效果 */
+  }
