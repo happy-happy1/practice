@@ -45,6 +45,6 @@ require('./routes/index')(app);
 
 
 app.listen(config.port, () => {
-    console.log('我启动了端口')
+    console.log('服务器运行在 http://localhost:3000')
 })
 

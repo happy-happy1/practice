@@ -15,21 +15,23 @@
     <div class="box_content">
         <div class="box">
             <h1 id="Login">Login</h1>
-            <div class="input-box">
-                <label>账号</label>
-                <input type="text">
-            </div>
-            <div class="input-box">
-                <label>密码</label>
-                <input type="password">
-            </div>
-            <div class="btn-box">
-                <a href="#">忘记密码</a>
-                <div>
-                    <button>登录</button>
-                    <button>注册</button>
+            <form action="/login" method="post">
+                <div class="input-box">
+                    <label>账号</label>
+                    <input type="text" name="userName">
                 </div>
-            </div>
+                <div class="input-box">
+                    <label>密码</label>
+                    <input type="password" name="userPwd">
+                </div>
+                <div class="btn-box">
+                    <a href="#">忘记密码</a>
+                    <div>
+                        <button type="submit">登录</button>
+                        <button type="submit">注册</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 <script src="./style.js"></script>
